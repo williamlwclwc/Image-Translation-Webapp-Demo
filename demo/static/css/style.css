@@ -1,0 +1,75 @@
+.right
+{
+position:absolute;
+right:0px;
+}
+
+.skyButton {
+	background-color:#0078ff;
+    border-radius:15px;
+    border: 1px solid #0078ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 10px;
+	text-decoration:none;
+	width: 70px;
+}
+
+.trailButton {
+	background-color:#aaaaaa;
+    border-radius:15px;
+    border: 1px solid #aaaaaa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 10px;
+    text-decoration:none;
+    width: 70px;
+}
+
+.grassButton {
+	background-color:#00ff00;
+    border-radius:15px;
+    border: 1px solid #00ff00;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 10px;
+	text-decoration:none;
+	width: 70px;
+}
+
+.objectButton {
+	background-color:#000000;
+    border-radius:15px;
+    border: 1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 10px;
+	text-decoration:none;
+	width: 100px;
+}
+
+.vegetationButton {
+	background-color:#666633;
+    border-radius:15px;
+    border: 1px solid #666633;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px 10px;
+	text-decoration:none;
+	width: 100px;
+}

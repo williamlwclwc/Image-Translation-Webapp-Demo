@@ -1,0 +1,6 @@
+/.vscode/*
+/venv/*
+/demo/__pycache__/*
+/demo/static/dataset/GT_color/*
+/demo/static/dataset/rgb/*
+/demo/static/model/*

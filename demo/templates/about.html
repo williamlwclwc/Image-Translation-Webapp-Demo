@@ -1,0 +1,79 @@
+{% extends "template.html" %}
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background-color: #bfeef0f1;">
+        <a class="navbar-brand" href="/" style="margin-left: 10px;">
+            <img src="{{url_for('static', filename='img/favicon.png')}}" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Image Translation Project Demo
+        </a>
+        <div style="margin-right: 10px;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">
+                        <i class="fas fa-home"></i>
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/testset">
+                        <i class="fas fa-database"></i>
+                        Testing Dataset <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/demo">
+                        <i class="fas fa-edit"></i>
+                        Draw Your Own
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">
+                        <i class="fas fa-users"></i>
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="width:800px; margin:10px auto">
+        <h1 style="text-align: center;">About This Project</h1>
+        <div style="margin: 15px 0;">
+            <p>
+                This is Wenchang Liu's 3rd year project at the University of Manchester,
+                supervised by Prof. Angelo Cangelosi.
+            </p>
+            <div style="color:darkslateblue;font-size:20px;margin-top:20px;">
+                The implementation is based on three papers:
+            </div>
+            <p>
+                Pix2pix:
+                <br>
+                Isola, P., Zhu, J. Y., Zhou, T., & Efros, A. A. (2017). Image-to-image translation with conditional adversarial networks. In CVPR, 2017. 
+            </p>
+            <p>
+                Pix2pixHD:
+                <br> 
+                Wang, T. C., Liu, M. Y., Zhu, J. Y., Tao, A., Kautz, J., & Catanzaro, B. (2018). High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs. In CVPR, 2018.
+            </p>
+            <p>
+                SPADE:
+                <br>
+                Park, T., Liu, M.-Y., Wang, T.-C., & Zhu, J.-Y. (2019). Semantic Image Synthesis with Spatially-Adaptive Normalization. In CVPR, 2019 (Oral).
+            </p>
+            <div style="color:darkslateblue;font-size:20px;margin-top:20px;">
+                The dataset is referenced from:
+            </div>
+            <p>
+                Freiburg Forest Annotated Dataset:
+                <br>
+                Valada, A., Oliveira, G. L., Brox, T., & Burgard, W. (2017). Deep Multispectral Semantic Scene Understanding of Forested Environments Using Multimodal Fusion (pp. 465–477).
+            </p>
+            <div style="color:black;font-size:20px;margin-top:20px; width: auto;">
+                Credit the author for the icon:
+            
+            <a style="color: darkslateblue;" target="_blank" href="https://icons8.com/icons/set/create-new">Create icon</a> icon by <a style="color: darkslateblue;" target="_blank" href="https://icons8.com">Icons8</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

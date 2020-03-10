@@ -1,0 +1,74 @@
+{% extends "template.html" %}
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background-color: #bfeef0f1;">
+        <a class="navbar-brand" href="/" style="margin-left: 10px;">
+            <img src="{{url_for('static', filename='img/favicon.png')}}" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Image Translation Project Demo
+        </a>
+        <div style="margin-right: 10px;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">
+                        <i class="fas fa-home"></i>
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/testset">
+                        <i class="fas fa-database"></i>
+                        Testing Dataset <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/demo">
+                        <i class="fas fa-edit"></i>
+                        Draw Your Own
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        <i class="fas fa-users"></i>
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="font-size:60px;font-weight:bold;text-align:center;margin-top: 30px;">
+        Image Translation Demo
+    </div>
+
+    <table id="main frame" align="center" style="margin-top: 70px; border-spacing:10px; border-collapse:separate;">
+        <tbody>
+            <tr>
+                <td>
+                    <canvas id="canvas-seg" width="512px" height="256px" style="background-color: white; border: 1px solid black;"></canvas>
+                    <a class="nav-link" href="/static/usr_img/seg_map.png" download="seg_map.png" style="text-align: center; color:darkblue">
+                        <i class="fas fa-download"></i>
+                        Download Segmentation Map
+                    </a>
+                </td>
+                <td>
+                    <form action="/testset", method="POST", style="text-align: center;">
+                        {{formSample.sample(class="btn btn-primary btn-sm", style="height:30px; width:180px")}}
+                        <br>
+                        <br>
+                        {{formTranslateHD.translateHD(class="btn btn-success btn-sm", style="height:30px; width:180px")}}
+                        <br>
+                        <br>
+                        {{formTranslateSpade.translateSpade(class="btn btn-success btn-sm", style="height:30px; width:180px")}}
+                    </form>
+                </td>
+                <td>
+                    <canvas id="canvas-gen" width="512px" height="256px" style="background-color: white; border: 1px solid black;"></canvas>
+                    <a class="nav-link" href="/static/usr_img/gen_img.jpg" download="gen_img.jpg" style="text-align: center; color:darkblue">
+                        <i class="fas fa-download"></i>
+                        Download Generated Image
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock content %}
