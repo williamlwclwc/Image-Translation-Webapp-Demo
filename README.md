@@ -18,6 +18,6 @@
 * Putting pretrained models (named as generatorHD, generatorSpade) under demo/static/model
 * Create an python virtual environment: $ python -m venv venv
 * Activate the virtual environment: $ source ./venv/bin/activate
-* Install Dependencies: $ pip install -r requirements.txt
+* Install Dependencies: $ pip install -r requirements.txt (if you cannot install some libraries with this command, please install them manually)
 * Run debugging server locally: $ python run.py, and the you can open the webapp demo on <http://127.0.0.1:5000/>
 * Use Ctrl+C to stop the server and use "$ deactivate" to quit venv
