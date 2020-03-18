@@ -14,7 +14,7 @@
 
 ## How to run
 
-* Putting testing images under demo/static/datasets/GT_color
+* Putting testing images under demo/static/dataset/GT_color
 * Putting pretrained models (named as generatorHD, generatorSpade) under demo/static/model
 * Create an python virtual environment: $ python -m venv venv
 * Activate the virtual environment: $ source ./venv/bin/activate
